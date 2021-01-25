@@ -4,8 +4,9 @@ public class Deadlock implements Runnable {
     @Override
     public void run() {
         doSquare();
-        doTriangle();
+        doTriangle()
     }
+
 
     private static class Resource{
 
