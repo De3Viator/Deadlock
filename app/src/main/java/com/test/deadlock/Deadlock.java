@@ -36,12 +36,4 @@ public class Deadlock implements Runnable {
             }
         }
     }
-
-    public static void main (String [] Args){
-        Deadlock job = new Deadlock();
-        Thread pavel = new Thread(job,"Павел");
-        Thread victor = new Thread(job, "Виктор");
-        pavel.start();
-        victor.start();
-    }
 }
